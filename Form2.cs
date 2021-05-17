@@ -87,7 +87,7 @@ namespace Практическая_работа_1
         //проверка на ввод только русского алфавита и backspace
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar < 'А' || e.KeyChar > 'я') && e.KeyChar != 8)
+            if ((e.KeyChar < 'А' || e.KeyChar > 'я') && e.KeyChar != 8 && e.KeyChar != 32)
                 e.Handled = true;
         }
     }
