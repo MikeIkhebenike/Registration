@@ -104,5 +104,23 @@ namespace Практическая_работа_1
 
     }
 }
-            
+
+//if (!(e.KeyChar < '0' || e.KeyChar > '9')) // если символ не цифра  
+/*e.Handled = true; */  // нажатый символ не вводится
+//тоже самое
+//if (!Char.IsDigit(e.KeyChar))
+//   e.Handled = true;
+//	проверка на ввод символов букв русского или английского алфавита:
+//if (!Char.IsLetter(e.KeyChar))
+//    e.Handled = true; 
+//	проверка на ввод символов букв или цифр:
+//if (!Char.IsLetterOrDigit(e.KeyChar))
+//    e.Handled = true;
+//	проверка на ввод символов русского алфавита (следует учесть, что коды символов упорядочены следующим образом: A < B < C < … < Z < a < b < c < … < z < А < Б < В < … < Я < а < б < в < … < я)
+//      if (e.KeyChar < 'А' || e.KeyChar > 'я') // если не русская буква
+//    e.Handled = true;
+// e.KeyChar != 8 - Backspace; e.KeyChar != 32 - пробел
+
+
+
 
